@@ -1,0 +1,46 @@
+/*.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}*/
+
+.passed{
+    animation-name: passed;
+    animation-duration: 1s;
+}
+.not-passed{
+    animation-name: not-passed;
+    animation-duration: 1s;
+}
+
+@keyframes passed {
+    0%      {color: #39f;}
+    100%    {color: #333;}
+}
+
+@keyframes not-passed {
+    0%      {color: #ee395b;}
+    100%    {color: #333;}
+}
+
+hr {
+
+border-top-width: 0px;
+}
+
+.divider {
+    line-height:0
+}
+
+.divider::after {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    max-width: 100%;
+    border-top: 2px solid #f95860;
+    vertical-align: top;
+    border-image: linear-gradient(90deg, #39f 0, #39f 35%, #39f 100%);
+    border-image-slice:1
+}
+
