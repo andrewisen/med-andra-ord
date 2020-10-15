@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+    html, body {
+    height:100%;
+}
+
+</style>
 </head>
-<body>
-<div class="uk-text-center">
-    <h1>Med andra ord</h1>
+<body class="uk-background-muted">
+    <br><br>
+<div class="uk-container uk-container-xsmall uk-text-center">
+    <h1>Med andra ord<span class="uk-badge " style="vertical-align: top">BETA</span></h1>
     <p>Beskriv ordet med andra ord. </p>
-    <p id="randomWord"></p>
+    
+
+
+    <div class="uk-card uk-card-default uk-card-body ">
+        <h1 class="uk-card-title uk-text-uppercase" id="randomWord">Primary</h1>
+        
+    </div>
+    <br>
+
+
+    <button class="uk-button uk-button-primary uk-text-capitalize"><span uk-icon="check"></span> Korrekt</button>
+    <dfn>eller</dfn>
+    <button class="uk-button uk-button-danger uk-text-capitalize"><span uk-icon="close"></span> Pass</button>
+    <progress id="js-progressbar" class="uk-progress" value="10" max="100"></progress>
+
+    <div>
+         <button class="uk-button uk-button-default uk-background-default uk-text-capitalize"><span uk-icon="settings"></span> Inställningar</button>
+          <button class="uk-button uk-button-default uk-background-default uk-text-capitalize"><span uk-icon="question"></span>  Hjälp</button>
+    </div>
+
 </div>
+
+
 </body>
 </html>
 
