@@ -5,6 +5,22 @@
 <body>
 <h1>Med andra ord</h1>
 <p>Beskriv ordet med andra ord. </p>
+<p id="randomWord"></p>
 </body>
 </html>
 
+<script type="text/javascript">
+var url = './assets/words/words.txt';
+
+fetch(url)
+    .then( response => response.text() )
+    .then( data => generateData(data) )
+    .catch( error => console.error(error));
+
+function generateData(data){
+    var words = data.split('\n');
+    var randomWord = words[ Math.floor( Math.random() * words.length) ];
+    document.getElementById('randomWord').innerHTML = randomWord;
+}
+
+</script>
